@@ -1,0 +1,13 @@
+services:
+  kaban-trello-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8092:8080"
+    restart: always
+    volumes:
+      - data-protection-keys:/root/.aspnet/DataProtection-Keys
+
+volumes:
+  data-protection-keys:

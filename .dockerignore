@@ -1,0 +1,7 @@
+**/bin/
+**/obj/
+/bin/
+/obj/
+
+../MagicaDeNavinha.Shared/bin/
+../MagicaDeNavinha.Shared/obj/
