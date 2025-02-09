@@ -13,7 +13,6 @@ RUN dotnet build "MagicaDeNavinha.Web/MagicaDeNavinha.Web.csproj" -c Release -o 
 
 FROM build AS publish
 RUN dotnet publish "MagicaDeNavinha.Web/MagicaDeNavinha.Web.csproj" -c Release -o /app/publish
-
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
